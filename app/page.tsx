@@ -9,12 +9,12 @@ import { ArrowRight } from "lucide-react"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col font-helvetica bg-white">
+    <main className="flex min-h-screen flex-col font-helvetica ">
       {/* Navigation */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-white text-black section-margin-bottom">
+      <section className="relative bg-white text-black section-margin mt-[calc(theme(height.20)+1rem)]">
         <VideoSection src="/Beautiful 4K tropical beach aerial l a bird s eye view of ocean waves l TimelapsePro 2_2.mp4" />
       </section>
 
