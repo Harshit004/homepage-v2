@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-white text-black">
+      <section className="relative bg-white text-black section-margin-bottom">
         <VideoSection src="/Beautiful 4K tropical beach aerial l a bird s eye view of ocean waves l TimelapsePro 2_2.mp4" />
       </section>
 
@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Second Earth Image */}
-      <section className="relative bg-white text-black mt-[40px]">
+      <section className="relative bg-white text-black mt-[40px] section-margin-bottom">
         <VideoSection src="/Logo Filcker Animation D5-09_1.mp4" />
       </section>
 
