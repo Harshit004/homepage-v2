@@ -196,21 +196,21 @@ export default function Home() {
       <section className="container section-margin">
         <h2 className="heading-86 mb-[120px]">Related Information</h2>
         <div className="grid grid-cols-4 gap-8">
-          <RelatedCard image="/news1.jpg" 
-          title="News And Updates" 
-          description="Latest news and updates from WAE" />
+          <RelatedCard image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c32e685-fbfe-4edb-0e63-4bbf261b3100/public" 
+          title="Awards and Other Information" 
+          description="Information regarding awards received by the Hitachi Group in various fields and related announcements." />
           <RelatedCard
-            image="/news2.jpg"
-            title="Impact We Create For Customers"
-            description="How our products make a difference"
+            image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/67063015-a309-4a59-9247-c67c4efea500/public"
+            title="News And Updates"
+            description="Information regarding awards received by the Hitachi Group in various fields and related announcements."
           />
-          <RelatedCard image="/news1.jpg" 
-          title="News And Updates" 
-          description="Latest news and updates from WAE" />
+          <RelatedCard image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/efbc7ed9-3a44-4bea-0cab-e1f7ba555500/public" 
+          title="Impact We Enable For You" 
+          description="Information regarding awards received by the Hitachi Group in various fields and related announcements." />
           <RelatedCard
-            image="/news2.jpg"
-            title="Impact We Create For Customers"
-            description="How our products make a difference"
+            image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/afdeb7b4-18e6-4bc2-0ed8-85d97cb6dc00/public"
+            title="Our Sustainable Water Solutions"
+            description="Information regarding awards received by the Hitachi Group in various fields and related announcements."
           />
       
         </div>
