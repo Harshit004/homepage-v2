@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* Made In India Section */}
       <section className="section-margin-bottom">
-        <div className="w-[1200px] h-[500px] mx-auto px-[120px] flex items-start justify-between">
+        <div className="w-[1200px] h-[500px] px-auto mx-[120px] flex items-start justify-between">
           <div className="relative w-[520px] h-[500px]">
             <Image 
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/db75c7b8-8d2c-44f3-b1e7-f8a200329800/public" 
