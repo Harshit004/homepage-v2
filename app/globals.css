@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1440px] px-[120px];
+  }
+  
+  .nav-link {
+    @apply text-base font-normal hover:text-gray-600 transition-colors;
+  }
+  
+  .section-margin {
+    @apply mb-[120px];
+  }
+  
+  .section-margin-bottom {
+    @apply mb-[180px];
+  }
+  
+  .heading-64 {
+    @apply text-[64px] leading-[110%] tracking-[-4%] font-normal font-helvetica;
+  }
+  
+  .heading-86 {
+    @apply text-[86px] leading-[110%] tracking-[-4.26px] font-normal font-helvetica;
+  }
+  
+  .text-40 {
+    @apply text-[40px] leading-[120%] tracking-[2%] font-normal font-helvetica;
+  }
+  
+  .text-32 {
+    @apply text-[32px] leading-[150%] tracking-[1%] font-normal font-helvetica;
+  }
+}
+
