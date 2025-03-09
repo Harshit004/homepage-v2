@@ -3,7 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "WAE - Disrupting the Status Quo",
+  title: "WAE",
   description:
     "WAE leads transformative projects and develops cutting-edge purification systems, all aimed at ensuring a sustainable future.",
   generator: 'v0.dev'

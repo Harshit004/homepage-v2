@@ -35,7 +35,7 @@ export default function Navbar() {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
-      } ${isScrolled ? 'bg-white bg-opacity-0  shadow-md' : 'bg-transparent'}`}
+      } ${isScrolled ? 'bg-white bg-opacity-0 shadow-md' : 'bg-transparent'}`}
     >
       <div className="max-w-[1440px] mx-auto px-[120px] pt-[20px]">
         <div className="flex items-center justify-between">
