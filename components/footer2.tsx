@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import toast from "react-hot-toast";
 
@@ -52,7 +52,7 @@ export const Footer2 = () => {
   const [email, setEmail] = useState("");
   const [formErrors, setFormErrors] = useState<string | null>(null);
 
-  const emailIdValidationRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email validation regex
+  const emailIdValidationRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -83,34 +83,36 @@ export const Footer2 = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-black via-black via-85% to-[#252525] px-4 pb-11 pt-32 text-white">
-      <div className="border-t-white/40 xl:border-t">
-        <div className="mx-auto flex flex-col items-center justify-between gap-[60px] xl:max-w-[85%] xl:flex-row xl:items-start xl:gap-24">
+    <footer className="relative bg-gradient-to-b from-black via-black via-85% to-[#252525] px-6 pb-11 pt-24 text-white">
+      <div className="border-t border-white/40 xl:border-t">
+        <div className="mx-auto flex flex-col items-center justify-between gap-12 xl:max-w-[85%] xl:flex-row xl:items-start xl:gap-24">
+          {/* LEFT SECTION - LOGO & NEWSLETTER */}
           <div className="max-xl:w-full xl:-mt-16">
-            <Link href="/" className="mx-auto -mt-2 mb-12 block xl:mr-0">
+            <Link href="/" className="mx-auto mb-8 block xl:mr-0">
               <img
                 src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/93d4d7c4-0b19-4021-6a66-c8b3a2876f00/public"
                 alt="Wae"
                 width={120}
                 height={60}
-                className="mx-auto object-contain xl:ml-0"
+                className="mx-auto xl:ml-0"
               />
             </Link>
 
-            <div className="mb-0 xl:mb-20">
-              <label
-                htmlFor="newsletter"
-                className="mb-6 block font-secondary text-sm uppercase md:text-base"
-              >
-                Join our community to stay updated on our latest news and
-                innovative water projects. Subscribe to Our Newsletter
+            {/* NEWSLETTER SECTION */}
+            <div className="mb-6 xl:mb-16">
+              <label htmlFor="newsletter" className="mb-4 block font-secondary text-sm uppercase md:text-base">
+                Stay updated with our latest news and innovative water projects. Subscribe to our Newsletter.
               </label>
 
-              <form onSubmit={handleSubmit} className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white max-xl:w-full">
-                <div className="relative flex flex-1 items-stretch">
-                    <div className="left-5 top-1/2 hidden -translate-y-1/2 md:absolute xl:block">
-                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/efa0a1a2-94bb-4cc1-43f6-67d61bdee200/public" alt="newsletter icon" />
-                    </div>
+              <form onSubmit={handleSubmit} className="flex items-center max-xl:w-full">
+                {/* Email Input */}
+                <div className="relative flex flex-1">
+                    {/* Newsletter Icon */}
+                  <div className="left-5 top-1/2 hidden -translate-y-1/2 md:absolute xl:block">
+                    <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/efa0a1a2-94bb-4cc1-43f6-67d61bdee200/public" alt="newsletter icon" />
+                  </div>
+
+                  {/* Email Input */}
                   <input
                     id="newsletter"
                     type="email"
@@ -118,39 +120,46 @@ export const Footer2 = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email to get the latest news..."
-                    className="w-full bg-black p-3 xl:pl-16 placeholder:text-white"
+                    className="w-full bg-black p-3 xl:pl-16 placeholder:text-white rounded-lg rounded-tl-[8px] rounded-bl-[8px] border border-[#303030] focus-within:border-white"
                   />
                 </div>
 
-                <button type="submit" className="bg-white text-black wae-btn-md max-w-[150px] rounded-tr-[8px] rounded-br-[8px] px-10 py-2 font-medium">
+                {/* Subscribe Button */}
+                <button type="submit" className="bg-white text-black px-6 py-3 rounded-lg rounded-tr-[8px] rounded-br-[8px] font-medium">
                   Subscribe
                 </button>
               </form>
+
               {formErrors && <p className="mt-2 text-sm text-red-500">{formErrors}</p>}
             </div>
 
+            {/* COPYRIGHT (Hidden for Mobile) */}
             <div className="hidden text-xs text-[#f2f2f2] opacity-75 xl:block">
-              <p className="mb-4">© 2024 WAE Ltd.</p>
+              <p>© 2024 WAE Ltd.</p>
             </div>
           </div>
 
-          <div className="grid grid-cols-4 gap-8 xl:-mt-10 xl:gap-9">
+          {/* FOOTER LINKS */}
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4 xl:-mt-10 xl:gap-9">
             {footerLinks.map((col) => (
-              <div key={col.id} className="col-span-2 sm:col-span-1">
-                <h6 className="mb-5 text-base xl:mb-10">{col.title}</h6>
+              <div key={col.id}>
+                <h6 className="mb-3 text-lg font-normal">{col.title}</h6>
                 <ul>
-                  {col.list.map((listItem) => (
-                    <li key={listItem.id} className="mb-3 text-sm font-extralight opacity-80 last:mb-0">
-                      <Link href={listItem.link} className="underline-offset-4 hover:underline">
-                        {listItem.name}
-                      </Link>
-                    </li>
-                  ))}
+                  <div className="mt-4 md:mt-6 lg:mt-8 xl:mt-10">
+                    {col.list.map((listItem) => (
+                        <li key={listItem.id} className="mb-2 text-sm font-light opacity-80 last:mb-0">
+                        <Link href={listItem.link} className="underline-offset-4 hover:underline">
+                            {listItem.name}
+                        </Link>
+                        </li>
+                    ))}
+                  </div>
                 </ul>
               </div>
             ))}
           </div>
 
+          {/* COPYRIGHT (For Mobile) */}
           <div className="w-full text-center text-xs text-[#f2f2f2] opacity-75 xl:hidden">
             <p>© 2024 WAE Ltd.</p>
           </div>

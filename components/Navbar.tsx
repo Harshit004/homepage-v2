@@ -37,7 +37,7 @@ export default function Navbar() {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       } ${isScrolled ? 'bg-white bg-opacity-0 shadow-md' : 'bg-transparent'}`}
     >
-      <div className="max-w-[1440px] mx-auto px-[120px] pt-[20px]">
+      <div className="max-w-[90%] mx-auto px-[5vw] pt-[4vh]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -46,12 +46,12 @@ export default function Navbar() {
               alt="WAE Logo" 
               width={144} 
               height={56}
-              className="mb-[10px]"
+              className="mb-[0.5rem] w-auto h-auto max-h-[56px]"
             />
           </Link>
 
           {/* Center Navigation */}
-          <nav className="flex items-center space-x-8">
+          <nav className="flex items-center space-x-[2vw]">
             <Link href="/company" className="nav-link">Company</Link>
             <Link href="/products" className="nav-link">Product & Solutions</Link>
             <Link href="/news" className="nav-link">News & Updates</Link>
@@ -63,4 +63,4 @@ export default function Navbar() {
       </div>
     </header>
   )
-} 
+}
