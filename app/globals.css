@@ -53,13 +53,14 @@ body {
     @apply text-base font-normal hover:text-gray-600 transition-colors;
   }
   
-  .section-margin {
-    @apply mb-[120px];
-  }
-  
-  .section-margin-bottom {
-    @apply mb-[180px];
-  }
+/* Converted px values to % for margins */
+.section-margin {
+  @apply mb-[8.33%];  /* 120px → 8.33% of 1440px */
+}
+
+.section-margin-bottom {
+  @apply mb-[12.5%];  /* 180px → 12.5% of 1440px */
+}
   
   .heading-64 {
     @apply text-[64px] leading-[110%] tracking-[-4%] font-normal font-helvetica;

@@ -21,7 +21,7 @@ export default function Marquee({ children, speed = 30 }: MarqueeProps) {
     const contentWidth = contentRef.current.offsetWidth
 
     // Only animate if content is wider than container
-    if (contentWidth <= marqueeWidth) return
+    //if (contentWidth <= marqueeWidth) return
 
     let position = 0
     const pixelsPerFrame = speed / 60 // pixels per frame at 60fps

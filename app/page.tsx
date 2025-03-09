@@ -184,8 +184,8 @@ export default function Home() {
             <p className="font-helvetica text-[32px] leading-[110%] tracking-[1%] align-middle font-[350]">
               Life at WAE is all about bringing your whole self to work. Our diverse and inclusive culture thrives on the unique perspectives of our team, making every day an opportunity to learn, connect, and grow together. It's a place where your ideas shine, your voice is heard, and you feel right at home no matter where you're from.
             </p>
-            <Link href="/careers" className="inline-flex items-center bg-black text-white w-[253px] h-[56px] gap-[20px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] mt-[40px] hover:bg-gray-800">
-              KNOW MORE <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cb01eed2-61d9-45f4-ceb4-4af758b19400/public" className="h-4 w" />
+            <Link href="/careers" className="inline-flex items-center bg-black text-white w-[253px] h-[56px] gap-[20px] py-[16px] px-[32px] mt-[40px] hover:bg-gray-800">
+              KNOW MORE <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cb01eed2-61d9-45f4-ceb4-4af758b19400/public" className="h-4 w ml-[20px]" />
             </Link>
           </div>
         </div>
