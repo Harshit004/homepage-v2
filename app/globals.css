@@ -61,6 +61,10 @@ body {
 .section-margin-bottom {
   @apply mb-[12.5%];  /* 180px → 12.5% of 1440px */
 }
+
+.section-margin-top {
+  @apply mt-[12.5%];  /* 180px → 12.5% of 1440px */
+}
   
   .heading-64 {
     @apply text-[64px] leading-[110%] tracking-[-4%] font-normal font-helvetica;

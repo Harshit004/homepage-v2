@@ -35,9 +35,9 @@ export default function Navbar() {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
-      } ${isScrolled ? 'bg-white bg-opacity-0 shadow-md' : 'bg-transparent'}`}
+      } ${isScrolled ? 'bg-white bg-opacity-0' : 'bg-transparent'}`}
     >
-      <div className="max-w-[90%] mx-auto px-[5vw] pt-[4vh]">
+      <div className="max-w-[90%] mx-auto px-[5vw] pt-[4vh] pb-[2vh]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">

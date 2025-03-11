@@ -1,12 +1,35 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import Marquee from "../components/marquee"
+//import Marquee from "../components/marquee"
 import ProductCard from "../components/product-card"
 import RelatedCard from "../components/related-card"
 import VideoSection from "../components/VideoSection"
 import Navbar from "../components/Navbar"
 import { Footer2 } from "../components/footer2"
+import CountUp from "react-countup";
+import { useEffect, useState } from "react";
+
 export default function Home() {
+
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById("sustainability-section");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.75) {
+          setStartCount(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col font-helvetica ">
       {/* Navigation */}
@@ -69,7 +92,10 @@ export default function Home() {
       </section>
 
       {/* Sustainability Section */}
-      <section className="w-[1440px] h-[786px] mx-auto bg-black text-white pt-[180px] pb-[180px] px-[120px]">
+      <section 
+      id="sustainability-section"
+      className="w-[1440px] h-[786px] mx-auto bg-black text-white pt-[180px] pb-[180px] px-[120px]"
+      >
         <div className="w-[1200px] mx-auto">
           <div className="mb-[80px]">
             <h2 className="heading-64 mb-[48px] text-white uppercase">Sustainability</h2>
@@ -79,15 +105,21 @@ export default function Home() {
           </div>
           <div className="max-w-[1200px] h-[134px] flex justify-between gap-[60px] mx-auto">
             <div className="flex flex-col items-center">
-              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">1,012,120.25</h3>
+              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">
+                <CountUp start={0} end={startCount ? 1012120.25 : 0} duration={4} separator="," decimal="." />
+              </h3>
               <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-[200px] h-[24px] text-gray-400 text-center">TONNES CO2 EMISSIONS SAVED</p>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">12,185.43</h3>
+              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">
+                <CountUp start={0} end={startCount ? 12185.43 : 0} duration={4} separator="," decimal="." />
+              </h3>
               <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-[200px] h-[24px] text-gray-400 text-center">MILLION GALLONS WATER SAVED</p>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">22,253.65</h3>
+              <h3 className="font-helvetica text-[64px] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-[300px] h-[90px] text-white text-center">
+               <CountUp start={0} end={startCount ? 22253.65 : 0} duration={4} separator="," decimal="." />
+              </h3>
               <p className="font-mont text-[16px] leading-[24px] tracking-[1%] align-middle font-light uppercase w-[200px] h-[24px] text-gray-400 text-center">TONNES PLASTIC REMOVED</p>
             </div>
           </div>
@@ -95,10 +127,11 @@ export default function Home() {
       </section>
 
       {/* Partner Logo Marquee */}
+      {/*
       <section className="w-full bg-white py-[80px]">
         <Marquee>
           <div className="flex items-center gap-[80px] px-[120px]">
-            {/* First set of logos */}
+            
             <Image 
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1e62ea68-4b77-4744-faef-deb8f2324b00/public" 
               alt="Google Logo" 
@@ -123,7 +156,7 @@ export default function Home() {
               width={200} 
               height={80} 
             />
-            {/* Second set of logos */}
+            
             <Image 
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1e62ea68-4b77-4744-faef-deb8f2324b00/public" 
               alt="Google Logo" 
@@ -151,9 +184,9 @@ export default function Home() {
           </div>
         </Marquee>
       </section>
-
+      */}
       {/* Made In India Section */}
-      <section className="section-margin-bottom">
+      <section className="section-margin-top section-margin-bottom">
         <div className="w-[1200px] h-[500px] px-auto mx-[120px] flex items-start justify-between">
           <div className="relative w-[520px] h-[500px]">
             <Image 
