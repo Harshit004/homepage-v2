@@ -254,6 +254,9 @@ export default function Careers() {
           </div>
         </div>
 
+        {/* Bottom Margin*/}
+        <div className="mb-[180px]"></div>
+
       </main>
       <Footer2 />
     </>
