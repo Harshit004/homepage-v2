@@ -23,7 +23,7 @@ export default function Careers() {
         <div className="h-[180px]"></div>
 
         {/* Horizontal Divider */}
-        <div className="w-full h-[1px] bg-gray-300"></div>
+        <div className="w-full h-[1px] bg-black"></div>
 
         {/* Careers Section */}
         <h1 
@@ -49,7 +49,7 @@ export default function Careers() {
 
         {/* Current Openings Section */}
         <h2 
-          className="mt-[29px] ml-[120px] w-fit h-[95px] font-helvetica text-[86px] font-normal leading-[110%] tracking-[-4.96%] whitespace-nowrap"
+          className="mt-[10px] ml-[120px] w-fit h-[95px] font-helvetica text-[86px] font-normal leading-[110%] tracking-[-4.96%] whitespace-nowrap"
         >
           Current Openings
         </h2>
@@ -58,7 +58,7 @@ export default function Careers() {
         <div className="mt-[38px] mx-[120px] mb-[120px] flex justify-between items-start">
           
           {/* Left Item: Sales Manager */}
-          <h3 className="w-[397px] h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
+          <h3 className="w-fit whitespace-nowrap h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
             Sales Manager
           </h3>
 
@@ -87,8 +87,8 @@ export default function Careers() {
         {/* Parent Container for Graphic Designer & Description Box */}
         <div className="mt-[38px] mx-[120px] mb-[180px] flex justify-between items-start">
           
-          {/* Left Item: Sales Manager */}
-          <h3 className="w-[397px] h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
+          {/* Left Item: Graphic Designer */}
+          <h3 className="w-fit whitespace-nowrap h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
             Graphic Designer
           </h3>
 
