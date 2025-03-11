@@ -7,7 +7,7 @@ export default function Careers() {
   return (
     <>
       <Navbar />
-      <main className="max-w-[1440px] mx-auto px-0 pt-[19vh]">
+      <main className="max-w-[1440px] mx-auto pt-[19vh]">
         {/* Banner Image */}
         <div className="relative w-full h-[688px]">
           <Image
@@ -254,8 +254,31 @@ export default function Careers() {
           </div>
         </div>
 
-        {/* Bottom Margin*/}
+        {/* Bottom Margin Before Next Divider */}
         <div className="mb-[180px]"></div>
+
+        {/* 4 images section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-[55px] w-full max-w-[1200px] mx-[120px] mb-[100px] md:mb-[180px]">
+          <img
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4ffa90ac-3776-43bf-9516-d4be96312300/public"
+            className="w-full aspect-auto object-contain"
+          />
+          <img
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8b2d976b-dfd5-41ff-3030-739208c2da00/public"
+            className="w-full aspect-auto object-contain md:row-span-2"
+          />
+          <img
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d6333765-ee81-4dab-9a9a-b5a40184ef00/public"
+            className="w-full aspect-auto object-contain md:row-span-2"
+          />
+          <img
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0d155b2e-5450-4223-f126-17aa853d4300/public"
+            className="w-full aspect-auto object-contain"
+          />
+        </div>
+
+
+
 
       </main>
       <Footer2 />
