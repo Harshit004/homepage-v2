@@ -78,7 +78,12 @@ export default function Careers() {
             font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
             flex items-center justify-center gap-2 hover:bg-gray-800 transition">
               Apply Now
-              <span className="text-lg font-bold">↗</span> {/* North-East Arrow */}
+              <img 
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                alt="Arrow Icon" 
+                width="24" 
+                height="24" 
+              />
             </button>
 
           </div>
@@ -108,7 +113,12 @@ export default function Careers() {
             font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
             flex items-center justify-center gap-2 hover:bg-gray-800 transition">
               Apply Now
-              <span className="text-lg font-bold">↗</span> {/* North-East Arrow */}
+              <img 
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                alt="Arrow Icon" 
+                width="24" 
+                height="24" 
+              />
             </button>
 
           </div>
@@ -126,13 +136,21 @@ export default function Careers() {
 
         {/* Opportunity list */}
         <div
-          className="relative w-full h-[400px] bg-cover bg-center"
+          className="relative w-full h-[400px] bg-cover bg-center transition-all duration-500 group"
           style={{
             backgroundImage:
               "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e4d61536-8242-40a4-4110-ddb20c607300/public')",
           }}
         >
-          <div className="flex justify-between items-start h-full px-[120px]">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              backgroundImage:
+                "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/376fd209-de50-4657-9fa1-62d2b83bd700/public')",
+            }}
+          ></div>
+
+          <div className="flex justify-between items-start h-full px-[120px] relative z-10">
             {/* Left Item */}
             <div className="mt-[168px]">
               <h2 className="w-[500px] h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
@@ -140,119 +158,160 @@ export default function Careers() {
               </h2>
               <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
                 Step into the professional world with hands-on 
-                experience and expertvmentorship. Ideal for those 
+                experience and expert mentorship. Ideal for those 
                 eager to learn and grow.
               </p>
             </div>
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-            <button className="w-[222.25px] h-[56px] border border-white flex items-center justify-center 
-            gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-              Apply Now{" "}
-              <span className="text-lg">↗</span>
-            </button>
+              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
+                Apply Now 
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                  alt="Arrow Icon" 
+                  width="24" 
+                  height="24" 
+                />
+              </button>
             </div>
           </div>
         </div>
 
+
         <div
-          className="relative w-full h-[400px] bg-cover bg-center"
+          className="relative w-full h-[400px] bg-cover bg-center group"
           style={{
             backgroundImage:
-              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e4d61536-8242-40a4-4110-ddb20c607300/public')",
+              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/775d9d34-50d8-4e70-2f4b-34937f790c00/public')",
           }}
         >
-          <div className="flex justify-between items-start h-full px-[120px]">
+          {/* Hover Image Overlay */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              backgroundImage:
+                "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/69a60181-953b-4c2b-e1bd-d0ce14d49100/public')",
+            }}
+          ></div>
+
+          <div className="flex justify-between items-start h-full px-[120px] relative">
             {/* Left Item */}
             <div className="mt-[168px]">
               <h2 className="w-fit h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
-              Full-Time Positions
+                Full-Time Positions
               </h2>
               <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
-                Dive into diverse roles that challenge and excite 
-                you. From engineering to marketing, we are on the 
-                lookout for passionate professionals ready to 
-                innovate.
+                Dive into diverse roles that challenge and excite you. From
+                engineering to marketing, we are on the lookout for passionate
+                professionals ready to innovate.
               </p>
             </div>
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-            <button className="w-[222.25px] h-[56px] border border-white flex items-center justify-center 
-            gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-              Apply Now{" "}
-              <span className="text-lg">↗</span>
-            </button>
+              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
+                Apply Now 
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                  alt="Arrow Icon" 
+                  width="24" 
+                  height="24" 
+                />
+              </button>
             </div>
           </div>
         </div>
 
+        {/* Internship Section */}
         <div
-          className="relative w-full h-[400px] bg-cover bg-center"
+          className="relative w-full h-[400px] bg-cover bg-center group"
           style={{
             backgroundImage:
-              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e4d61536-8242-40a4-4110-ddb20c607300/public')",
+              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d2555e3b-02fb-4fad-f924-5b81439b4c00/public')",
           }}
         >
-          <div className="flex justify-between items-start h-full px-[120px]">
+          {/* Hover Image Overlay */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              backgroundImage:
+                "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac2eee46-ca15-4f28-574a-37f8b762f100/public')",
+            }}
+          ></div>
+
+          <div className="flex justify-between items-start h-full px-[120px] relative">
             {/* Left Item */}
             <div className="mt-[168px]">
               <h2 className="w-[500px] h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Internship
               </h2>
               <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
-                Our internships offer more than just experience. 
-                They’re gateways to your future career, providing 
-                real-world skills and professional development.
+                Our internships offer more than just experience. They’re gateways to
+                your future career, providing real-world skills and professional
+                development.
               </p>
             </div>
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-            <button className="w-[222.25px] h-[56px] border border-white flex items-center justify-center 
-            gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-              Apply Now{" "}
-              <span className="text-lg">↗</span>
-            </button>
+              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
+                Apply Now 
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                  alt="Arrow Icon" 
+                  width="24" 
+                  height="24" 
+                />
+              </button>
             </div>
           </div>
         </div>
 
+        {/* Short Term Projects Section */}
         <div
-          className="relative w-full h-[400px] bg-cover bg-center"
+          className="relative w-full h-[400px] bg-cover bg-center group"
           style={{
             backgroundImage:
-              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e4d61536-8242-40a4-4110-ddb20c607300/public')",
+              "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2fb9f347-99a2-4263-894e-4cd47eb3e600/public')",
           }}
         >
-          <div className="flex justify-between items-start h-full px-[120px]">
+          {/* Hover Image Overlay */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              backgroundImage:
+                "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/16d7a205-7f2b-4d1c-993b-ef686f473000/public')",
+            }}
+          ></div>
+
+          <div className="flex justify-between items-start h-full px-[120px] relative">
             {/* Left Item */}
             <div className="mt-[168px]">
               <h2 className="w-fit h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Short Term Projects
               </h2>
               <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
-                Engage in unique, high-impact projects. Perfect for 
-                specialists looking to contribute their expertise on 
-                a flexible basis.
+                Engage in unique, high-impact projects. Perfect for specialists
+                looking to contribute their expertise on a flexible basis.
               </p>
             </div>
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-            <button className="w-[222.25px] h-[56px] border border-white flex items-center justify-center 
-            gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-              Apply Now{" "}
-              <span className="text-lg">↗</span>
-            </button>
+              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
+                Apply Now 
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                  alt="Arrow Icon" 
+                  width="24" 
+                  height="24" 
+                />
+              </button>
             </div>
           </div>
-        </div>
+        </div>          
+
 
         {/* Bottom Margin Before Next Divider */}
         <div className="mb-[180px]"></div>
