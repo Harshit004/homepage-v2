@@ -27,14 +27,14 @@ export default function Careers() {
 
         {/* Careers Section */}
         <h1 
-          className="mt-[10px] ml-[120px] w-[383px] h-[132px] font-helvetica text-[120px] font-normal leading-[110%] tracking-[-4.96%] capitalize"
+          className="mt-[10px] ml-[120px] w-[600px] h-[132px] font-helvetica text-[120px] font-normal leading-[110%] tracking-[-4.96%] capitalize"
         >
           Careers
         </h1>
 
         {/* Text Box Below Heading */}
         <p 
-          className="mt-[40px] ml-[120px] w-[600px] h-[315px] font-helvetica text-[32px] font-normal leading-[110%] tracking-[1%] text-[#808080]"
+          className="mt-[12px] ml-[120px] w-[600px] h-[110px] font-helvetica text-[20px] font-normal leading-[110%] tracking-[1%] text-[#808080]"
         >
           Life at WAE is vibrant and inspiring. Our culture is a tapestry of collaboration, inclusivity, and continuous learning. 
           Here, your professional growth is as important as your personal well-being. Enjoy a work environment that fosters creativity, 
@@ -42,7 +42,7 @@ export default function Careers() {
         </p>
 
         {/* Bottom Margin Before Next Divider */}
-        <div className="mb-[180px]"></div>
+        <div className="mb-[132px]"></div>
 
         {/* Second Divider */}
         <div className="w-[1440px] h-[1px] bg-black mx-auto"></div>
@@ -55,18 +55,18 @@ export default function Careers() {
         </h2>
 
         {/* Parent Container for Sales Manager & Description Box */}
-        <div className="mt-[38px] mx-[120px] mb-[120px] flex justify-between items-start">
+        <div className="mt-[40px] mx-[120px] mb-[120px] flex justify-between items-start">
           
           {/* Left Item: Sales Manager */}
-          <h3 className="w-fit whitespace-nowrap h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
+          <h3 className="w-fit whitespace-nowrap h-[48px] font-helvetica text-[40px] font-normal leading-[110%] tracking-[-4.96%]">
             Sales Manager
           </h3>
 
           {/* Right Item: Description + Apply Button */}
-          <div className="w-[535px] h-[200px] flex flex-col">
+          <div className="w-[640px] h-[150px] flex flex-col">
             
             {/* Job Description */}
-            <p className="w-[535px] h-[104px] font-helvetica text-[24px] font-normal leading-[110%] tracking-[-2%] text-[#808080]">
+            <p className="w-[640px] h-[54px] font-helvetica text-[15.5px] font-normal leading-[110%] tracking-[-2%] text-[#808080]">
               Whether you're looking for a full-time role, an 
               apprenticeship, a short-term project, or an 
               internship, WAE has a place for you. Discover your 
@@ -77,7 +77,7 @@ export default function Careers() {
 
             {/* Apply Now Button (40px below text) */}
             <button 
-              className="w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
+              className="w-[230px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
               font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
               flex items-center justify-center gap-2 hover:bg-white hover:text-black transition group"
             >
@@ -103,18 +103,19 @@ export default function Careers() {
         </div>
 
         {/* Parent Container for Graphic Designer & Description Box */}
-        <div className="mt-[38px] mx-[120px] mb-[180px] flex justify-between items-start">
+        <div className="mt-[120px] mx-[120px] mb-[180px] flex justify-between items-start">
           
           {/* Left Item: Graphic Designer */}
-          <h3 className="w-fit whitespace-nowrap h-[77px] font-helvetica text-[64px] font-normal leading-[110%] tracking-[-4.96%]">
+          <h3 className="w-fit whitespace-nowrap h-[48px] font-helvetica text-[40px] font-normal leading-[110%] tracking-[-4.96%]">
             Graphic Designer
           </h3>
 
+
           {/* Right Item: Description + Apply Button */}
-          <div className="w-[535px] h-[200px] flex flex-col">
+          <div className="w-[640px] h-[150px] flex flex-col">
             
             {/* Job Description */}
-            <p className="w-[535px] h-[104px] font-helvetica text-[24px] font-normal leading-[110%] tracking-[-2%] text-[#808080]">
+            <p className="w-[640px] h-[54px] font-helvetica text-[15.5px] font-normal leading-[110%] tracking-[-2%] text-[#808080]">
               Whether you're looking for a full-time role, an 
               apprenticeship, a short-term project, or an 
               internship, WAE has a place for you. Discover your 
@@ -125,7 +126,7 @@ export default function Careers() {
 
             {/* Apply Now Button (40px below text) */}
             <button 
-              className="w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
+              className="w-[230px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
               font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
               flex items-center justify-center gap-2 hover:bg-white hover:text-black transition group"
             >
@@ -154,7 +155,7 @@ export default function Careers() {
         <div className="w-[1440px] h-[1px] bg-black mx-auto"></div>
 
         {/* Explore opportunities section */}
-        <section className="mt-[29px] ml-[120px] mb-[80px]">
+        <section className="mt-[10px] ml-[120px] mb-[80px]">
           <h2 className="w-fit h-[95px] font-helvetica font-[400] text-[86px] leading-[110%] tracking-[-4.96%] capitalize whitespace-nowrap">
             Explore Opportunity
           </h2>
@@ -178,11 +179,11 @@ export default function Careers() {
 
           <div className="flex justify-between items-start h-full px-[120px] relative z-10">
             {/* Left Item */}
-            <div className="mt-[168px]">
+            <div className="mt-[160px]">
               <h2 className="w-[500px] h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Apprenticeship
               </h2>
-              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
+              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[16px] leading-[120%] tracking-[-4%] text-white">
                 Step into the professional world with hands-on 
                 experience and expert mentorship. Ideal for those 
                 eager to learn and grow.
@@ -190,7 +191,7 @@ export default function Careers() {
             </div>
 
             {/* Right Item - Button */}
-            <div className="mt-[168px] mr-[120px]">
+            <div className="mt-[160px] mr-[120px]">
               <button 
                 className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
                 font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
@@ -235,11 +236,11 @@ export default function Careers() {
 
           <div className="flex justify-between items-start h-full px-[120px] relative">
             {/* Left Item */}
-            <div className="mt-[168px]">
+            <div className="mt-[160px]">
               <h2 className="w-fit h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Full-Time Positions
               </h2>
-              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
+              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[16px] leading-[120%] tracking-[-4%] text-white">
                 Dive into diverse roles that challenge and excite you. From
                 engineering to marketing, we are on the lookout for passionate
                 professionals ready to innovate.
@@ -247,7 +248,7 @@ export default function Careers() {
             </div>
 
             {/* Right Item - Button */}
-            <div className="mt-[168px] mr-[120px]">
+            <div className="mt-[160px] mr-[120px]">
               <button 
                 className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
                 font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
@@ -292,11 +293,11 @@ export default function Careers() {
 
           <div className="flex justify-between items-start h-full px-[120px] relative">
             {/* Left Item */}
-            <div className="mt-[168px]">
+            <div className="mt-[160px]">
               <h2 className="w-[500px] h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Internship
               </h2>
-              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
+              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[16px] leading-[120%] tracking-[-4%] text-white">
                 Our internships offer more than just experience. They’re gateways to
                 your future career, providing real-world skills and professional
                 development.
@@ -304,7 +305,7 @@ export default function Careers() {
             </div>
 
             {/* Right Item - Button */}
-            <div className="mt-[168px] mr-[120px]">
+            <div className="mt-[160px] mr-[120px]">
               <button 
                 className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
                 font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
@@ -353,14 +354,14 @@ export default function Careers() {
               <h2 className="w-fit h-[77px] font-helvetica font-[400] text-[64px] leading-[120%] tracking-[-4%] text-white mb-[8px]">
                 Short Term Projects
               </h2>
-              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[22px] leading-[120%] tracking-[-4%] text-white">
+              <p className="w-[500px] h-[87px] font-helvetica font-[400] text-[16px] leading-[120%] tracking-[-4%] text-white">
                 Engage in unique, high-impact projects. Perfect for specialists
                 looking to contribute their expertise on a flexible basis.
               </p>
             </div>
 
             {/* Right Item - Button */}
-            <div className="mt-[168px] mr-[120px]">
+            <div className="mt-[160px] mr-[120px]">
               <button 
                 className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
                 font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
