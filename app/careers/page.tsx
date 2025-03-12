@@ -73,18 +73,31 @@ export default function Careers() {
               perfect fit and join a team that's shaping the future.
             </p>
 
+            <div className="mb-[40px]"></div>
+
             {/* Apply Now Button (40px below text) */}
-            <button className="mt-[40px] w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
-            flex items-center justify-center gap-2 hover:bg-gray-800 transition">
+            <button 
+              className="w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
+              font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+              flex items-center justify-center gap-2 hover:bg-white hover:text-black transition group"
+            >
               Apply Now
               <img 
                 src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
                 alt="Arrow Icon" 
                 width="24" 
                 height="24" 
+                className="group-hover:hidden"
+              />
+              <img 
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                alt="Arrow Icon Hover" 
+                width="24" 
+                height="24" 
+                className="hidden group-hover:block"
               />
             </button>
+
 
           </div>
         </div>
@@ -108,18 +121,31 @@ export default function Careers() {
               perfect fit and join a team that's shaping the future.
             </p>
 
+            <div className="mb-[40px]"></div>
+
             {/* Apply Now Button (40px below text) */}
-            <button className="mt-[40px] w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white 
-            font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
-            flex items-center justify-center gap-2 hover:bg-gray-800 transition">
+            <button 
+              className="w-[222px] h-[56px] px-[32px] py-[16px] bg-black text-white border border-black
+              font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+              flex items-center justify-center gap-2 hover:bg-white hover:text-black transition group"
+            >
               Apply Now
               <img 
                 src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
                 alt="Arrow Icon" 
                 width="24" 
                 height="24" 
+                className="group-hover:hidden"
+              />
+              <img 
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
+                alt="Arrow Icon Hover" 
+                width="24" 
+                height="24" 
+                className="hidden group-hover:block"
               />
             </button>
+
 
           </div>
         </div>
@@ -165,13 +191,25 @@ export default function Careers() {
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-                Apply Now 
+              <button 
+                className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
+                font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+                flex items-center justify-center gap-2 hover:bg-black hover:text-white transition apply-button-group"
+              >
+                Apply Now
                 <img 
                   src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
                   alt="Arrow Icon" 
                   width="24" 
                   height="24" 
+                  className="apply-button-group-hover:hidden"
+                />
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                  alt="Arrow Icon Hover" 
+                  width="24" 
+                  height="24" 
+                  className="hidden apply-button-group-hover:block"
                 />
               </button>
             </div>
@@ -210,13 +248,25 @@ export default function Careers() {
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-                Apply Now 
+              <button 
+                className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
+                font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+                flex items-center justify-center gap-2 hover:bg-black hover:text-white transition apply-button-group"
+              >
+                Apply Now
                 <img 
                   src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
                   alt="Arrow Icon" 
                   width="24" 
                   height="24" 
+                  className="apply-button-group-hover:hidden"
+                />
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                  alt="Arrow Icon Hover" 
+                  width="24" 
+                  height="24" 
+                  className="hidden apply-button-group-hover:block"
                 />
               </button>
             </div>
@@ -255,13 +305,25 @@ export default function Careers() {
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-                Apply Now 
+              <button 
+                className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
+                font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+                flex items-center justify-center gap-2 hover:bg-black hover:text-white transition apply-button-group"
+              >
+                Apply Now
                 <img 
                   src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
                   alt="Arrow Icon" 
                   width="24" 
                   height="24" 
+                  className="apply-button-group-hover:hidden"
+                />
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                  alt="Arrow Icon Hover" 
+                  width="24" 
+                  height="24" 
+                  className="hidden apply-button-group-hover:block"
                 />
               </button>
             </div>
@@ -299,13 +361,25 @@ export default function Careers() {
 
             {/* Right Item - Button */}
             <div className="mt-[168px] mr-[120px]">
-              <button className="w-fit h-[56px] border border-white flex items-center justify-center gap-[20px] px-[32px] py-[16px] bg-white text-black hover:bg-gray-200 transition font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%]">
-                Apply Now 
+              <button 
+                className="w-[222px] h-[56px] px-[32px] py-[16px] bg-white text-black border border-black
+                font-helvetica font-[400] text-[24px] leading-[100%] tracking-[2%] 
+                flex items-center justify-center gap-2 hover:bg-black hover:text-white transition apply-button-group"
+              >
+                Apply Now
                 <img 
                   src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/531927db-f544-4083-04ff-c05ab2bc2600/public" 
                   alt="Arrow Icon" 
                   width="24" 
                   height="24" 
+                  className="apply-button-group-hover:hidden"
+                />
+                <img 
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b65e6ab9-db4f-4c7a-ee12-08b6d540ab00/public" 
+                  alt="Arrow Icon Hover" 
+                  width="24" 
+                  height="24" 
+                  className="hidden apply-button-group-hover:block"
                 />
               </button>
             </div>
