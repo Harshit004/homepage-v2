@@ -160,28 +160,30 @@ export default function Home() {
       </section>
 
       {/* Made In India Section */}
-      <section className="section-margin-top section-margin-bottom">
-        <div className="max-w-[75rem] mx-auto px-4 flex flex-col md:flex-row items-start justify-between">
-          <div className="relative w-full md:w-[46.5%] h-[31.25rem]">
-            <Image 
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/db75c7b8-8d2c-44f3-b1e7-f8a200329800/public" 
-              alt="Indian Fabric" 
-              fill 
-              className="object-cover" 
-              priority
-              sizes="(max-width: 768px) 100vw, 46.5vw"
-            />
-          </div>
-          <div className="w-full md:w-[53.5%] flex flex-col mt-8 md:mt-0 md:ml-8">
-            <h2 className="font-helvetica text-[4rem] leading-[120%] tracking-[-4%] align-middle font-normal mb-8">
-              Made in India
-            </h2>
-            <p className="font-helvetica text-[1.25rem] leading-[110%] tracking-[1%] align-middle font-normal">
-              WAE captures the heart of Indian innovation by seamlessly blending the time-honoured ideals with the latest technology. We are driven by the mission to build a brand that not only saves the planet but also creates a potent impact on future generations for the country's advancements, integrity & innovation. Our approach strengthens community resilience while showcasing India's Intellectual capital on the world stage.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="section-margin-top section-margin-bottom">
+  <div className="max-w-[75rem] mx-auto px-4 flex flex-col md:flex-row items-start justify-between">
+    <div className="relative w-full md:w-[46.5%] h-[31.25rem]">
+      <Image 
+        src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/db75c7b8-8d2c-44f3-b1e7-f8a200329800/public" 
+        alt="Indian Fabric" 
+        fill 
+        className="object-cover" 
+        priority
+        sizes="(max-width: 768px) 100vw, 46.5vw"
+      />
+    </div>
+    <div className="w-full md:w-[37.375rem] flex flex-col mt-8 md:mt-0 md:ml-16">
+      <h2 className="font-helvetica text-[4rem] leading-[120%] tracking-[-4%] align-middle font-normal mb-[0.625rem]">
+        Made in India
+      </h2>
+      <p className="font-helvetica text-[1.25rem] leading-[110%] tracking-[1%] align-middle font-normal w-[37.375rem] h-[9.625rem]">
+        WAE captures the heart of Indian innovation by seamlessly blending the time-honoured ideals with the latest technology. We are driven by the mission to build a brand that not only saves the planet but also creates a potent impact on future generations for the country's advancements, integrity & innovation. Our approach strengthens community resilience while showcasing India's Intellectual capital on the world stage.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
       <hr className="w-full border-[0.03125rem] border-black mb-2.5" />
 
