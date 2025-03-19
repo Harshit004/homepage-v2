@@ -30,19 +30,16 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col font-helvetica">
+    <main className="overflow-x-hidden flex min-h-screen flex-col font-helvetica">
       {/* Navigation */}
       <Navbar />
 
       {/* Hero Section */}
-      {/* Originally: mt-[calc(theme(height.20)+1rem)] */}
-      {/* Assuming h-20 is 5rem, adding 1rem gives ~6rem (mt-24 in Tailwind scale) */}
       <section className="relative bg-white text-black section-margin mt-24">
         <VideoSection src="/Beautiful 4K tropical beach aerial l a bird s eye view of ocean waves l TimelapsePro 2_2.mp4" />
       </section>
 
       {/* Our Purpose Section */}
-      {/* 120px ≈ 7.5rem, 12px ≈ 0.75rem */}
       <section className="container mb-[7.5rem]">
         <h2 className="heading-64 mb-3">Our Purpose</h2>
         <p className="text-[2rem] leading-[110%] tracking-[2%]">
@@ -52,23 +49,18 @@ export default function Home() {
       </section>
 
       {/* Second Earth Image */}
-      {/* 40px ≈ 2.5rem */}
       <section className="relative bg-white text-black mt-10 section-margin-bottom">
         <VideoSection src="/Logo Filcker Animation D5-09_1.mp4" />
       </section>
 
       {/* Horizontal Rule */}
-      {/* 0.5px ≈ 0.03125rem and 10px ≈ 0.625rem */}
-      <hr className="w-screen border-[0.03125rem] border-black mb-2.5" />
+      <hr className="w-full border-[0.03125rem] border-black mb-2.5" />
 
       {/* Products Section */}
-      {/* 1200px ≈ 75rem */}
-      <section className="max-w-screen mx-auto section-margin-bottom">
-        {/* 86px ≈ 5.375rem, 42px ≈ 2.625rem */}
+      <section className="max-w-[75rem] mx-auto section-margin-bottom">
         <h2 className="font-helvetica text-[5.375rem] leading-[110%] tracking-[-0.27rem] align-middle font-normal mb-[2.625rem]">
           Products
         </h2>
-        {/* gap-x: 40px ≈ 2.5rem (mt-10), gap-y: 80px ≈ 5rem (mt-20) */}
         <div className="grid grid-cols-2 gap-x-10 gap-y-20">
           <ProductCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3be892cf-2037-4046-8d68-aff3c7328a00/public"
@@ -106,11 +98,10 @@ export default function Home() {
       {/* Sustainability Section */}
       <section
         id="sustainability-section"
-        className="max-w-screen bg-black text-white pt-[11.25rem] pb-[11.25rem] "
+        className="w-full bg-black text-white pt-[11.25rem] pb-[11.25rem]"
       >
         <div className="max-w-[75rem] mx-auto">
           <div className="mb-[3.75rem]">
-            {/* 64px ≈ 4rem, 20px ≈ 1.25rem */}
             <h2 className="font-helvetica text-[4rem] leading-[100%] tracking-[-4%] align-middle font-normal uppercase md:whitespace-nowrap mb-5">
               Sustainability
             </h2>
@@ -120,7 +111,6 @@ export default function Home() {
           </div>
           <div className="max-w-[75rem] flex justify-between gap-[3.75rem] mx-auto">
             <div className="flex flex-col items-center">
-              {/* 72px ≈ 4.5rem, 20px ≈ 1.25rem */}
               <h3 className="font-helvetica text-[4.5rem] leading-[140%] tracking-[1%] align-middle font-normal uppercase w-fit text-white text-center mb-5">
                 <CountUp
                   start={0}
@@ -171,41 +161,39 @@ export default function Home() {
 
       {/* Made In India Section */}
       <section className="section-margin-top section-margin-bottom">
-        <div className="max-w-[75rem] h-[31.25rem] mx-[7.5rem] flex items-start justify-between">
-          <div className="relative w-[32.5rem] h-[31.25rem]">
+        <div className="max-w-[75rem] mx-auto px-4 flex flex-col md:flex-row items-start justify-between">
+          <div className="relative w-full md:w-[46.5%] h-[31.25rem]">
             <Image 
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/db75c7b8-8d2c-44f3-b1e7-f8a200329800/public" 
               alt="Indian Fabric" 
               fill 
               className="object-cover" 
               priority
-              sizes="32.5rem"
+              sizes="(max-width: 768px) 100vw, 46.5vw"
             />
           </div>
-          <div className="w-[37.38rem] h-[30.88rem] flex flex-col">
-            {/* 64px ≈ 4rem, 32px ≈ 2rem */}
-            <h2 className="font-helvetica text-[4rem] leading-[120%] tracking-[-4%] align-middle font-normal mt-0 mb-8">
+          <div className="w-full md:w-[53.5%] flex flex-col mt-8 md:mt-0 md:ml-8">
+            <h2 className="font-helvetica text-[4rem] leading-[120%] tracking-[-4%] align-middle font-normal mb-8">
               Made in India
             </h2>
-            <p className="font-helvetica text-[1.25rem] leading-[110%] tracking-[1%] align-middle font-normal w-[37.38rem] h-[22.06rem]">
+            <p className="font-helvetica text-[1.25rem] leading-[110%] tracking-[1%] align-middle font-normal">
               WAE captures the heart of Indian innovation by seamlessly blending the time-honoured ideals with the latest technology. We are driven by the mission to build a brand that not only saves the planet but also creates a potent impact on future generations for the country's advancements, integrity & innovation. Our approach strengthens community resilience while showcasing India's Intellectual capital on the world stage.
             </p>
           </div>
         </div>
       </section>
 
-      <hr className="w-screen border-[0.03125rem] border-black mb-2.5" />
+      <hr className="w-full border-[0.03125rem] border-black mb-2.5" />
 
       {/* Life @ WAE Section */}
       <section className="container section-margin section-margin-bottom">
-        <div className="flex justify-between items-start">
-          <div className="w-[25.19rem] h-[5.94rem]">
-            {/* 86px ≈ 5.375rem */}
+        <div className="flex flex-col md:flex-row justify-between items-start">
+          <div className="w-full md:w-[25.19rem] h-[5.94rem]">
             <h2 className="font-helvetica text-[5.375rem] leading-[110%] tracking-[-0.27rem] align-middle font-normal">
               Life @ WAE
             </h2>
           </div>
-          <div className="w-[40.625rem] h-[17.5rem]">
+          <div className="w-full md:w-[40.625rem] h-[17.5rem]">
             <p className="font-helvetica text-[1.25rem] leading-[110%] tracking-[1%] align-middle font-[350] mb-10">
               Life at WAE is all about bringing your whole self to work. Our diverse and inclusive culture thrives on the unique perspectives of our team, making every day an opportunity to learn, connect, and grow together. It's a place where your ideas shine, your voice is heard, and you feel right at home no matter where you're from.
             </p>
@@ -227,14 +215,14 @@ export default function Home() {
         </div>
       </section>
 
-      <hr className="w-screen border-[0.03125rem] border-black mb-2.5" />
+      <hr className="w-full border-[0.03125rem] border-black mb-2.5" />
 
       {/* Related Information Section */}
       <section className="max-w-[75rem] mx-auto mb-[9.72%]">
         <h2 className="font-helvetica text-[4rem] leading-[120%] tracking-[0%] align-middle font-normal uppercase md:whitespace-nowrap mb-[3.125rem]">
           Related Information
         </h2>
-        <div className="grid grid-cols-4 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
           <RelatedCard
             image="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c32e685-fbfe-4edb-0e63-4bbf261b3100/public"
             title="Awards and Other Information"

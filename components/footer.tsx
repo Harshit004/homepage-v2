@@ -5,11 +5,14 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 export default function Footer() {
   return (
     <footer>
-      <div className="max-w-screen mx-auto">
-        {/* Social Media and Newsletter (Inverted Colors) */}
-        <div className="bg-white text-black flex flex-col md:flex-row justify-between items-start md:items-center pb-[2.0625rem] gap-6 px-[7.5rem]">
+      <div className="max-w-[90rem] mx-auto">
+        {/* Social Media and Newsletter */}
+        <div className="bg-white text-black flex flex-col md:flex-row justify-between items-start md:items-center pb-[2.0625rem] gap-6 px-4 md:px-[7.5rem]">
           <div className="flex gap-4">
-            <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
+            <Link
+              href="#"
+              className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors"
+            >
               <Facebook className="h-6 w-6" />
             </Link>
             {/*
@@ -17,10 +20,16 @@ export default function Footer() {
               <Instagram className="h-6 w-6" />
             </Link>
             */}
-            <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
+            <Link
+              href="#"
+              className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors"
+            >
               <Linkedin className="h-6 w-6" />
             </Link>
-            <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
+            <Link
+              href="#"
+              className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -32,17 +41,14 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="flex">
+          <div className="flex flex-wrap items-center gap-4">
             <div
-              className="max-w-[9.375rem] max-h-[2.5rem] py-[0.4375rem] pr-[0.75rem]"
+              className="max-w-[9.375rem] max-h-[2.5rem] py-[0.4375rem] pr-[0.75rem] text-right"
               style={{
                 fontFamily: "Helvetica Neue",
                 fontWeight: 400,
                 fontSize: "1rem", // 16px
                 lineHeight: "1.25rem", // 20px
-                letterSpacing: "0px",
-                textAlign: "right",
-                verticalAlign: "middle",
               }}
             >
               Sign up for the newsletter
@@ -60,7 +66,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-wrap justify-evenly bg-black text-white py-12">
+        <div className="flex flex-wrap justify-evenly bg-black text-white py-12 px-4 md:px-0">
           {/* PRODUCTS */}
           <div>
             <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
@@ -223,7 +229,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Logo and Copyright */}
-        <div className="bg-white flex flex-col md:flex-row justify-between items-center py-4 border-t border-gray-300 mx-[7.5rem]">
+        <div className="bg-white flex flex-col md:flex-row justify-between items-center py-4 border-t border-gray-300 px-4 md:px-[7.5rem]">
           <Link href="/" className="mb-4 md:mb-0 no-underline">
             <Image
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/df470715-8b49-4d9d-b83b-7249a328b100/public"
@@ -233,7 +239,6 @@ export default function Footer() {
               className="w-auto h-auto max-h-[2.5rem]"
             />
           </Link>
-
           <p className="text-sm text-black">© 2025 WAE Ltd.</p>
         </div>
       </div>
