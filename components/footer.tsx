@@ -5,16 +5,18 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 export default function Footer() {
   return (
     <footer>
-      <div className="max-w-[1440px]">
+      <div className="max-w-screen mx-auto">
         {/* Social Media and Newsletter (Inverted Colors) */}
-        <div className="bg-white text-black flex flex-col md:flex-row justify-between items-start md:items-center pb-[33px] gap-6 px-[120px]">
+        <div className="bg-white text-black flex flex-col md:flex-row justify-between items-start md:items-center pb-[2.0625rem] gap-6 px-[7.5rem]">
           <div className="flex gap-4">
             <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
               <Facebook className="h-6 w-6" />
             </Link>
-            {/* <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
+            {/*
+            <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
               <Instagram className="h-6 w-6" />
-            </Link> */}
+            </Link>
+            */}
             <Link href="#" className="w-9 h-9 flex items-center justify-center bg-black text-white rounded-full transition-colors">
               <Linkedin className="h-6 w-6" />
             </Link>
@@ -31,40 +33,40 @@ export default function Footer() {
           </div>
 
           <div className="flex">
-          <div
-            className="max-w-[150px] max-h-[40px] py-[7px] pr-[12px]"
-            style={{
+            <div
+              className="max-w-[9.375rem] max-h-[2.5rem] py-[0.4375rem] pr-[0.75rem]"
+              style={{
                 fontFamily: "Helvetica Neue",
                 fontWeight: 400,
-                fontSize: "16px",
-                lineHeight: "20px",
+                fontSize: "1rem", // 16px
+                lineHeight: "1.25rem", // 20px
                 letterSpacing: "0px",
                 textAlign: "right",
                 verticalAlign: "middle",
-            }}
+              }}
             >
-            Sign up for the newsletter
+              Sign up for the newsletter
             </div>
 
             <input
               type="email"
               placeholder="Enter email address"
-              className="bg-transparent border border-black px-[24px] py-[13px] min-w-[250px] max-h-[54px] text-black text-[14px]"
+              className="bg-transparent border border-black px-[1.5rem] py-[0.8125rem] min-w-[15.625rem] max-h-[3.375rem] text-black text-[0.875rem]"
             />
-            <button className="bg-black text-white px-16 py-[10px]">
+            <button className="bg-black text-white px-16 py-[0.625rem]">
               Join
             </button>
           </div>
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-wrap justify-evenly bg-black text-white py-[48px]">
+        <div className="flex flex-wrap justify-evenly bg-black text-white py-12">
           {/* PRODUCTS */}
           <div>
-            <h3 className="mb-[24px] text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               PRODUCTS
             </h3>
-            <ul className="space-y-0.5 text-[14px] font-[400] uppercase tracking-wide leading-[140%] whitespace-nowrap">
+            <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%] whitespace-nowrap">
               <li>
                 <Link href="#" className="no-underline">
                   DRINKING WATER STATIONS
@@ -100,10 +102,10 @@ export default function Footer() {
 
           {/* ABOUT US */}
           <div>
-            <h3 className="mb-[24px] text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               ABOUT US
             </h3>
-            <ul className="space-y-0.5 text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               <li>
                 <Link href="#" className="no-underline">
                   COMPANY
@@ -134,10 +136,10 @@ export default function Footer() {
 
           {/* LEGAL */}
           <div>
-            <h3 className="mb-[24px] text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               LEGAL
             </h3>
-            <ul className="space-y-0.5 text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               <li>
                 <Link href="#" className="no-underline">
                   DATA POLICY
@@ -168,10 +170,10 @@ export default function Footer() {
 
           {/* SOCIAL */}
           <div>
-            <h3 className="mb-[24px] text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               SOCIAL
             </h3>
-            <ul className="space-y-0.5 text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               <li>
                 <Link href="#" className="no-underline">
                   LINKEDIN
@@ -202,10 +204,10 @@ export default function Footer() {
 
           {/* CONTACT */}
           <div>
-            <h3 className="mb-[24px] text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <h3 className="mb-6 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               CONTACT
             </h3>
-            <ul className="space-y-0.5 text-[14px] font-[400] uppercase tracking-wide leading-[140%]">
+            <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               <li>
                 <Link href="#" className="no-underline">
                   CAREERS
@@ -221,14 +223,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Logo and Copyright */}
-        <div className="bg-white flex flex-col md:flex-row justify-between items-center py-4 border-t border-gray-300 mx-[120px]">
+        <div className="bg-white flex flex-col md:flex-row justify-between items-center py-4 border-t border-gray-300 mx-[7.5rem]">
           <Link href="/" className="mb-4 md:mb-0 no-underline">
             <Image
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/df470715-8b49-4d9d-b83b-7249a328b100/public"
               alt="WAE Logo"
               width={100}
               height={40}
-              className="w-auto h-auto max-h-[40px]"
+              className="w-auto h-auto max-h-[2.5rem]"
             />
           </Link>
 

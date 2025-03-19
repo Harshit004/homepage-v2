@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* Products Section */}
       {/* 1200px ≈ 75rem */}
-      <section className="max-w-[75rem] mx-auto section-margin-bottom">
+      <section className="max-w-screen mx-auto section-margin-bottom">
         {/* 86px ≈ 5.375rem, 42px ≈ 2.625rem */}
         <h2 className="font-helvetica text-[5.375rem] leading-[110%] tracking-[-0.27rem] align-middle font-normal mb-[2.625rem]">
           Products
@@ -106,7 +106,7 @@ export default function Home() {
       {/* Sustainability Section */}
       <section
         id="sustainability-section"
-        className="max-w-[90rem] bg-black text-white pt-[11.25rem] pb-[11.25rem] px-[7.5rem]"
+        className="max-w-screen bg-black text-white pt-[11.25rem] pb-[11.25rem] "
       >
         <div className="max-w-[75rem] mx-auto">
           <div className="mb-[3.75rem]">
