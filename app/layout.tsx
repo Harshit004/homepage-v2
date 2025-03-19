@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "WAE",
   description:
     "WAE leads transformative projects and develops cutting-edge purification systems, all aimed at ensuring a sustainable future.",
-  generator: 'v0.dev'
 }
 
 export default function RootLayout({
