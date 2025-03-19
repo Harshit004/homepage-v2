@@ -5,12 +5,12 @@ import React, { useEffect, useState, useRef } from "react";
 function formatNumber(
   number: number,
   separator: string = ",",
-  decimals?: number,
+  decimals: number = 2, // default to 2 decimals
   decimal: string = "."
 ): string {
   const options: Intl.NumberFormatOptions = {
-    maximumFractionDigits: decimals ?? 0,
-    minimumFractionDigits: decimals ?? 0,
+    maximumFractionDigits: decimals,
+    minimumFractionDigits: decimals,
   };
 
   let formatted = number.toLocaleString("en-US", options);
@@ -33,7 +33,7 @@ const Counter: React.FC<CounterProps> = ({
   end,
   duration,
   separator = ",",
-  decimals,
+  decimals = 2, // default to 2 decimals if not provided
   decimal = ".",
 }) => {
   const [currentValue, setCurrentValue] = useState(0);
