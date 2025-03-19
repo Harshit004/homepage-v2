@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 export default function Footer() {
   return (
     <footer>
-      <div className="max-w-[90rem] mx-auto">
+      <div>
         {/* Social Media and Newsletter */}
         <div className="bg-white text-black flex flex-col md:flex-row justify-between items-start md:items-center pb-[2.0625rem] gap-6 px-4 md:px-[7.5rem]">
           <div className="flex gap-4">
