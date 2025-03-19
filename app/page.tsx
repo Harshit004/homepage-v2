@@ -54,6 +54,8 @@ export default function Home() {
         <VideoSection src="/Logo Filcker Animation D5-09_1.mp4" />
       </section>
 
+      <hr className="w-screen border-[0.5px] border-black mb-[10px]" />
+
       {/* Products Section */}
       <section className="w-[1200px] mx-auto section-margin-bottom">
         <h2 className="font-helvetica text-[86px] leading-[110%] tracking-[-4.26px] align-middle font-normal mb-[42px]">Products</h2>
@@ -229,12 +231,14 @@ export default function Home() {
           </div>
           <div className="w-[598px] h-[494px] flex flex-col">
             <h2 className="font-helvetica text-[64px] leading-[120%] tracking-[-4%] align-middle font-normal mt-0 mb-[32px]">Made in India</h2>
-            <p className="font-helvetica text-[32px] leading-[110%] tracking-[1%] align-middle font-normal w-[598px] h-[353px]">
+            <p className="font-helvetica text-[20px] leading-[110%] tracking-[1%] align-middle font-normal w-[598px] h-[353px]">
               WAE captures the heart of Indian innovation by seamlessly blending the time-honoured ideals with the latest technology. We are driven by the mission to build a brand that not only saves the planet but also creates a potent impact on future generations for the country's advancements, integrity & innovation. Our approach strengthens community resilience while showcasing India's Intellectual capital on the world stage.
             </p>
           </div>
         </div>
       </section>
+
+      <hr className="w-screen border-[0.5px] border-black mb-[10px]" />
 
       {/* Life @ WAE Section */}
       <section className="container section-margin section-margin-bottom">
@@ -243,7 +247,7 @@ export default function Home() {
             <h2 className="font-helvetica text-[86px] leading-[110%] tracking-[-4.26px] align-middle font-normal">Life @ WAE</h2>
           </div>
           <div className="w-[650px] h-[280px]">
-            <p className="font-helvetica text-[32px] leading-[110%] tracking-[1%] align-middle font-[350]">
+            <p className="font-helvetica text-[20px] leading-[110%] tracking-[1%] align-middle font-[350] mb-[40px]">
               Life at WAE is all about bringing your whole self to work. Our diverse and inclusive culture thrives on the unique perspectives of our team, making every day an opportunity to learn, connect, and grow together. It's a place where your ideas shine, your voice is heard, and you feel right at home no matter where you're from.
             </p>
             <Link
@@ -263,6 +267,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <hr className="w-screen border-[0.5px] border-black mb-[10px]" />
 
       {/* Related Information Section */}
       <section className="max-w-[1200px] mx-auto mb-[9.72%]">
