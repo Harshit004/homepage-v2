@@ -215,7 +215,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-0.5 text-[0.875rem] font-normal uppercase tracking-wide leading-[140%]">
               <li>
-                <Link href="#" className="no-underline">
+                <Link href="/careers" className="no-underline">
                   CAREERS
                 </Link>
               </li>
