@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden flex min-h-screen flex-col font-helvetica">
       {/* Navigation */}
-      <ResponsiveNavbar />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative bg-white text-black section-margin mt-24">
