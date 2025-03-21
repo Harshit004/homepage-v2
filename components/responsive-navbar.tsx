@@ -108,7 +108,7 @@ export default function ResponsiveNavbar() {
                 className={`absolute w-[46px] h-[2px] transition-all duration-700 ${
                   isOpen
                     ? "top-[5px] rotate-[35deg] bg-white"
-                    : "top-0 rotate-0 bg-black"
+                    : "top-0 rotate-0 bg-[#003F5F]"
                 }`}
               ></span>
               {/* Second line */}
@@ -116,7 +116,7 @@ export default function ResponsiveNavbar() {
                 className={`absolute w-[46px] h-[2px] transition-all duration-700 ${
                   isOpen
                     ? "top-[5px] -rotate-[35deg] bg-white"
-                    : "top-[10px] rotate-0 bg-black"
+                    : "top-[10px] rotate-0 bg-[#003F5F]"
                 }`}
               ></span>
             </div>
@@ -132,13 +132,13 @@ export default function ResponsiveNavbar() {
             width: `${logoPos.width}px`,
             height: `${logoPos.height}px`,
             transform: logoPos.transform,
-            marginBottom: "17px",
+            //marginBottom: "17px",
           }}
         >
           <div className="relative w-full h-full">
             {/* Closed state logo */}
             <Image
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/df470715-8b49-4d9d-b83b-7249a328b100/public"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/944085bf-f5d2-4352-d5c2-96d5198ae700/public"
               alt="Company Logo Closed"
               fill
               className={`object-contain transition-opacity duration-700 ${isOpen ? "opacity-0" : "opacity-100"}`}
