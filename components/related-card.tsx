@@ -26,8 +26,31 @@ export default function RelatedCard({ image, title, description, width, height }
       </div>
 
       <div className="transition-all duration-300">
-        <h3 className="text-base font-medium mb-1">{title}</h3>
-        <p className="text-sm text-gray-600 mb-[48px]">{description}</p>
+        <h3 className="
+        font-[Helvetica Neue]
+            font-[400]
+            text-[21px]
+            leading-[100%]
+            tracking-[0%]
+            align-middle
+            mb-[12px]
+            group-hover:no-underline 
+            px-[10px] 
+            pt-[12px]
+            "
+        >{title}</h3>
+        <p className="
+        font-[Helvetica Neue]
+            font-[400]
+            text-[15px]
+            leading-[120%]
+            tracking-[-2%]
+            align-middle
+            text-gray-600 
+            mb-[48px]  
+            px-[10px]
+            "
+        >{description}</p>
 
         {/* Arrow icon in the bottom-right corner */}
         <div className="absolute bottom-0 right-0">

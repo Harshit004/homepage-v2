@@ -220,8 +220,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="no-underline">
-                  OFFICE LOCATIONS
+                <Link href="/careers2" className="no-underline">
+                  CAREERS v2
                 </Link>
               </li>
             </ul>

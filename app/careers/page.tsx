@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar";
-import { Footer2 } from "@/components/footer2";
+import ResponsiveNavbar from "@/components/responsive-navbar"
+import Footer from "@/components/footer"
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Careers() {
   return (
     <>
-      <Navbar />
-      <main className="max-w-[1440px] mx-auto pt-[19vh]">
+      <ResponsiveNavbar />
+      <main className="max-w-[1440px] mx-auto">
         {/* Banner Image */}
         <div className="relative w-full h-[688px]">
           <Image
@@ -411,11 +412,8 @@ export default function Careers() {
           />
         </div>
 
-
-
-
       </main>
-      <Footer2 />
+      <Footer />
     </>
   );
 }

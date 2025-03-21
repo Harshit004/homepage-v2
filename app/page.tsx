@@ -6,7 +6,8 @@ import Link from "next/link"
 import ProductCard from "../components/product-card"
 import RelatedCard from "../components/related-card"
 import VideoSection from "../components/VideoSection"
-import Navbar from "../components/Navbar"
+import Navbar from "@/components/Navbar"
+import ResponsiveNavbar from "@/components/responsive-navbar"
 import Footer from "@/components/footer"
 import CountUp from "react-countup"
 import { useEffect, useState } from "react"
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden flex min-h-screen flex-col font-helvetica">
       {/* Navigation */}
-      <Navbar />
+      <ResponsiveNavbar />
 
       {/* Hero Section */}
       <section className="relative bg-white text-black section-margin mt-24">
